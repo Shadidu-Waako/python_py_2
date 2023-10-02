@@ -7,12 +7,8 @@ class Employee:
     self.department = department
 
   def __str__(self):
-    return f"Name: {self.name}\nAge: {self.age}\nGender: {self.gender}\nSalary: {self.salary}\nDepartment: {self.depaartment}"
+    return f"Name: {self.name}\nAge: {self.age}\nGender: {self.gender}\nSalary: {self.salary}\nDepartment: {self.department}"
 
-number_of_employees = int(input("Enter number of empolyees: \n"))
-for employee in number_of_employees:
-  print(f"Enter Employee {employee + 1} details")
-  employee{employee + 1} = Employee(input("Name: "), int(input("Age: ")), input("Gender: "), input("Salary: "), input("Department: "))
+employee = Employee(input("Name: "), input("Age: "), input("Gender: "), input("Salary: "), input("Department: "))
 
-for employee in number_of_employees:
-  print(f"Employee{employee + 1}: {employee}")
+print(f"Employee: {employee}")
