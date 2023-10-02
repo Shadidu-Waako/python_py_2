@@ -3,12 +3,15 @@ class Employee:
     self.name = name
     self.age = age
     self.gender = gender
-    self.salary = salary
+    if salary >= 1:
+      self.salary = salary
+    else:
+      print("Please enter salary which is greater than 0")
     self.department = department
 
   def __str__(self):
     return f"Name: {self.name}\nAge: {self.age}\nGender: {self.gender}\nSalary: {self.salary}\nDepartment: {self.department}"
 
-employee = Employee(input("Name: "), input("Age: "), input("Gender: "), input("Salary: "), input("Department: "))
+employee = Employee(input("Name: "), input("Age: "), input("Gender: "), float(input("Salary: ")), input("Department: "))
 
-print(f"Employee: {employee}")
+print(f"\n EMPLOYEE🌏 \n{employee}")
