@@ -1,3 +1,7 @@
+'''
+USE YOUR FULL NAME FOR GRADES AWARDING
+'''
+
 class Employee:
   def __init__(self, name, age, gender, salary, department):
     self.name = name
